@@ -8,6 +8,10 @@ The following are answers to frequently asked questions.
 +
 Use the userinput:[addcolumn] function to dynamically display columns for the Config query results that are displayed on screen on the Investigate page.
 
+* *How can I add columns to the config query results that are returned?*
++
+Use the userinput:[addcolumn] function to dynamically display columns for the config query results that are displayed on the Investigate page.
+
 * *Is time range part of grammar?*
 +
 Query time ranges are not part of grammar. Instead, the query time window is passed as a separate argument to the query APIs. The selection of what attributes or columns of a category are returned are not part of the RQL grammar.
