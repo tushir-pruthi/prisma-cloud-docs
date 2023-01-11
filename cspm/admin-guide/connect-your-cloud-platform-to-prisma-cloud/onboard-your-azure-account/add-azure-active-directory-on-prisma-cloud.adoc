@@ -30,24 +30,10 @@ This workflow uses Terraform to automatically create your Azure Active Directory
 
 ** *Onboard Azure Management Groups and Subscriptions*—Deselect this option to exclude onboarding management groups and click *Next*.
 +
-++++
-<draft-comment>did i get the gist of this description correct?</draft-comment>
-++++
-+
-++++
-<draft-comment>Is this needed? Also, when this option is deselected, then all of the resources are onboarded excluding management groups? I don’t see the clear differences in the use cases.
-
 [NOTE]
 ====
 If you leave *Onboard Azure Management Groups and Subscription* enabled, you will need to add the Reader role permission at the Root Management Group level for the app registration during onboarding.
 ====
-</draft-comment>
-++++
-+
-++++
-<draft-comment>need a practical use case for this.</draft-comment>
-++++
-
 ** *Select Mode*—Select *Monitor* to provide Prisma Cloud with read-only access, or *Monitor and Protect* for read-write access, and then click *Next*.
 +
 [NOTE]
@@ -55,7 +41,8 @@ If you leave *Onboard Azure Management Groups and Subscription* enabled, you wil
 The steps for Monitor and Monitor and Protect are identical onwards.
 ====
 +
-image::azure-tenant-commercial-no-management-groups1.png[scale=40]
+image::azure-step1.png
+[scale=40]
 
 . Enter your Azure application data into Prisma Cloud.
 +
@@ -85,44 +72,25 @@ The Azure application details to capture are as follows:
 +
 *** Click on the varname:[e_consent_link] link which will redirect you to the *API permissions* section in Azure portal.
 +
-image::azure-app-details.png[scale=60]
+image::add-azure-comm-step-2-1.png[scale=40]
 
 *** Click *Grant admin consent for Default Directory* and select *Yes*.
 +
 A success message should appear with the text *grant consent successful*.
-+
-image::grant-consent-successful.png[scale=60]
-
 *** Verify that the status column has green check marks.
-+
-image::azure-active-directory-configured-permissions.png[scale=60]
-+
-
-+++<draft-comment>azure-active-directory-configured-permissions.png</draft-comment>+++
 
 .. Enter your *Application (Client) ID*, *Application Client Secret*, and *Enterprise Application Object ID* details into the Prisma Cloud UI and click *Next*.
-+
-+++<draft-comment>should I link to, or mention the NSG logs with Azure??</draft-comment>+++
-+
-image::azure-active-directory-no-management-group.png[scale=60]
-+
-+++<draft-comment>azure-active-directory-no-management-group.png</draft-comment>+++
 
 . Add account groups.
 +
 Select the *Account Groups* you want to add and click *Next*. You must assign each cloud account to an account group, and to associate the account group with it to generate alerts when a policy violation occurs.
 
-. Verify the *Status* and click *Done* to save your changes.
+. Click *Save*.
 +
 [NOTE]
 ====
 If Prisma Cloud is able to validate the credentials by making an authentication call using the credentials provided in the previous step, it displays a green check mark.
 ====
-+
-image::add-azure-ad-status-1.png[scale=40]
-+
-+++<draft-comment>screenshot needs to be updated</draft-comment>+++
-
 
 
 [.task]

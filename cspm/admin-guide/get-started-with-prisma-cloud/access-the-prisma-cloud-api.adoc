@@ -12,8 +12,8 @@ Prisma Cloud requires an API access key to enable programmatic access to the RES
 [.procedure]
 . Authenticate to obtain a JWT.
 +
-The following is an example of a userinput:[curl] call for a REST API request that returns a JWT. Your Prisma Cloud access key provides the request parameters. Note that an access key is made up of two parts: an Access Key ID and a Secret Key. In the body parameters, specify your Access Key ID as the string value for the userinput:[userName] and your Secret Key as the string value for the userinput:[password] . 
-Note that you must use the https://prisma.pan.dev/api/cloud/api-urls/[API URL] for your tenant. This example uses  userinput:[https://api.prismacloud.io].
+The following is an example of a curl call for a REST API request that returns a JWT. Your Prisma Cloud access key provides the request parameters. Note that an access key is made up of two parts: an Access Key ID and a Secret Key. In the body parameters, specify your Access Key ID as the string value for the userinput:[userName] and your Secret Key as the string value for the userinput:[password] . 
+Note that you must use the https://prisma.pan.dev/api/cloud/api-urls/[API URL] for your tenant. This example uses https://api.prismacloud.io.
 +
 [userinput]
 ----
@@ -40,7 +40,7 @@ The following shows the response for a successful request.
 }
 ----
 +
-The value for userinput:[token] in the response is the JWT you will use to authorize your subsequent REST API requests.
+The value for token in the response is the JWT you will use to authorize your subsequent REST API requests.
 
 . Authorize Using the JWT.
 +
