@@ -88,8 +88,6 @@ You must assign each cloud account to an account group, and https://docs.paloalt
 ====
 If Prisma Cloud is able to successfully connect to your Azure subscription and retrieve information, the status is displayed with a green check mark. If Prisma Cloud is unable to retrieve the logs, the error message indicates what failed. See https://docs.paloaltonetworks.com/prisma/prisma-cloud/prisma-cloud-admin/connect-your-cloud-platform-to-prisma-cloud/onboard-your-azure-account/troubleshoot-azure-account-onboarding.html#id6b7e6e40-9ce7-43d8-b5b5-1dcc607d8e9b[Troubleshoot Azure Account Onboarding] for help.
 ====
-+
-image::add-azure-status-green.png[20]
 
 . Verify that you can view the information on your Azure resources on Prisma Cloud.
 +
@@ -229,8 +227,6 @@ You must assign each cloud account to an account group, and https://docs.paloalt
 ====
 If Prisma Cloud was able to successfully make an API request to retrieve the Azure flow logs, the status is displayed with a green check mark. If Prisma Cloud is unable to retrieve the logs, the error message indicates what failed. See https://docs.paloaltonetworks.com/prisma/prisma-cloud/prisma-cloud-admin/connect-your-cloud-platform-to-prisma-cloud/onboard-your-azure-account/troubleshoot-azure-account-onboarding.html#id6b7e6e40-9ce7-43d8-b5b5-1dcc607d8e9b[Troubleshoot Azure Account Onboarding] for help.
 ====
-+
-image::add-azure-status-green-gov.png[20]
 
 . Verify that you can view the information on your Azure resources on Prisma Cloud.
 +
@@ -344,6 +340,3 @@ image::edit-monitored.png[scale=40]
 +
 .. Select or deselect the appropriate account groups to enable security capabilities on the *Assign Account Groups* page. 
 .. Confirm your selections are checked in green under *Review Status* and click *Save*. 
-+
-image::review-status.png[scale=20]
-+
